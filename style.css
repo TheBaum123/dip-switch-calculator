@@ -1,0 +1,92 @@
+:root {
+    --main-bg-color: #2B3D41;
+    --secondary-bg-color: #4C5F6B;
+    --text-color: #E0E2DB;
+    --highlight-color: #A37774;
+    --lighter-secondary-bg-color: #5B6F7A;
+    --on-color: #8EC07CFF;
+    --off-color: #FB4943FF;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: 500ms;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    display: grid;
+    aspect-ratio: 1/1;
+}
+
+#output {
+    display: grid;
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    transform: translateY(-50%);
+    height: 30vw;
+    width: 100vw;
+    z-index: 1;
+    grid-template-areas: 
+    'empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1'
+    'empty2 dip1 dip2 dip3 dip4 dip5 dip6 dip7 dip8 dip9 empty3'
+    'empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4';
+}
+
+#input {
+    position: absolute;
+    top: 20vh;
+    left: 25vw;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 25vw;
+    height: 10vw;
+    color: var(--text-color);
+    background-color: var(--secondary-bg-color);
+    border: 1vw var(--lighter-secondary-bg-color) solid;
+    border-radius: 2.5vw;
+    text-align: center;
+}
+
+#calc-button {
+    position: absolute;
+    top: 20vh;
+    left: 75vw;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 25vw;
+    height: 10vw;
+    color: var(--text-color);
+    background-color: var(--secondary-bg-color);
+    border: 1vw var(--lighter-secondary-bg-color) solid;
+    border-radius: 2.5vw;
+    text-align: center;
+}
+
+.dip-container {
+    height: 30vw;
+    width: 8vw;
+    border: var(--lighter-secondary-bg-color) 1vw solid;
+    border-radius: 5vw;
+    z-index: 1;
+    background-color: var(--off-color);
+}
+
+.dip {
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 4vw;
+    z-index: 1;
+    transform: translate(0.25vw, 22vw);
+    transition: 250ms;
+    background-color: var(--lighter-secondary-bg-color);
+}
+
+#dip1container { grid-area: dip1;}
+#dip2container { grid-area: dip2;}
+#dip3container { grid-area: dip3;}
+#dip4container { grid-area: dip4;}
+#dip5container { grid-area: dip5;}
+#dip6container { grid-area: dip6;}
+#dip7container { grid-area: dip7;}
+#dip8container { grid-area: dip8;}
+#dip9container { grid-area: dip9;}
