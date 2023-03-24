@@ -39,7 +39,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 1000;
     width: 25vw;
-    height: 10vw;
+    height: 10vh;
     color: var(--text-color);
     background-color: var(--secondary-bg-color);
     border: 1vw var(--lighter-secondary-bg-color) solid;
@@ -54,7 +54,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 1000;
     width: 25vw;
-    height: 10vw;
+    height: 10vh;
     color: var(--text-color);
     background-color: var(--secondary-bg-color);
     border: 1vw var(--lighter-secondary-bg-color) solid;
@@ -63,7 +63,7 @@ body {
 }
 
 .dip-container {
-    height: 30vw;
+    height: 30vh;
     width: 8vw;
     border: var(--lighter-secondary-bg-color) 1vw solid;
     border-radius: 5vw;
@@ -76,7 +76,7 @@ body {
     width: 7.5vw;
     border-radius: 4vw;
     z-index: 1;
-    transform: translate(0.25vw, 22vw);
+    transform: translate(0.25vw, calc(30vh - 7.75vw));
     transition: 250ms;
     background-color: var(--lighter-secondary-bg-color);
 }

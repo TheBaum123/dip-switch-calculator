@@ -19,11 +19,11 @@ function calculate() {
     for(let i = 0; i < binaryArray.length; i++) {
         if(binaryArray[i] == 1) {
             document.getElementById("dip" + (i + 1)).style.backgroundColor = "var(--highlight-color)"
-            document.getElementById("dip" + (i + 1)).style.transform = "translate(0.25vw, 0.25vw)"
+            document.getElementById("dip" + (i + 1)).style.transform = "translate(0.25vw, 0.25vh)"
             document.getElementById("dip" + (i + 1) + "container").style.backgroundColor = "var(--on-color)"
         } else if(binaryArray[i] == 0) {
             document.getElementById("dip" + (i + 1)).style.backgroundColor = "var(--lighter-secondary-bg-color)"
-            document.getElementById("dip" + (i + 1)).style.transform = "translate(0.25vw, 22vw)"
+            document.getElementById("dip" + (i + 1)).style.transform = "translate(0.25vw, calc(30vh - 7.75vw))"
             document.getElementById("dip" + (i + 1) + "container").style.backgroundColor = "var(--off-color)"
         }
     }
