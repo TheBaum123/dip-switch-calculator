@@ -13,7 +13,7 @@ function calculate() {
 	    }
     }
     binaryArray = binary.split("")
-    while(binaryArray.length < 9) {
+    while(binaryArray.length < 10) {
         binaryArray.splice(0, 0, "0")
     }
     for(let i = 0; i < binaryArray.length; i++) {

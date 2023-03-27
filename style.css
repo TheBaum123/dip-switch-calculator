@@ -27,9 +27,9 @@ body {
     width: 100vw;
     z-index: 1;
     grid-template-areas: 
-    'empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1'
-    'empty2 dip1 dip2 dip3 dip4 dip5 dip6 dip7 dip8 dip9 empty3'
-    'empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4';
+    'empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1 empty1'
+    'empty2 dip1 dip2 dip3 dip4 dip5 dip6 dip7 dip8 dip9 dip10 empty3'
+    'empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4 empty4';
 }
 
 #input {
@@ -90,3 +90,4 @@ body {
 #dip7container { grid-area: dip7;}
 #dip8container { grid-area: dip8;}
 #dip9container { grid-area: dip9;}
+#dip10container { grid-area: dip10;}
